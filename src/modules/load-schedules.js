@@ -32,7 +32,7 @@ export async function loadSchedules(){
   hoursClick()
 
   const schedules = await fetchScheduleByDay({ date })
-  const schedulesSort = schedules.sort((a, b) => dayjs(a.when).hour() - dayjs(b.when).hour())
+  const schedulesSort = schedules.sort((a, b) => dayjs(a.when).hour() - dayjs(b.when).hour()) 
 
   scheduleShow({ schedules })
 }
